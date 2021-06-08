@@ -1,0 +1,37 @@
+
+:root{ /*haría los cambios que se le realizan a la etiqueta html*/
+  font-size: 18px;
+  --gristono1:#212121; /*variable de elementos que van a hacer usados en varios momentos del estilo*/
+  --gristono2:#424242;
+  --gristono3:#616161;
+}
+body{
+  color: var(--gristono1);
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  color: var(--gristono1);
+}
+header{
+  color: var(--gristono3);
+  font-size:14px;
+}
+header a{
+  color: var(--gristono3);
+  text-decoration: none; /*quitar el subrayado a las opciones del menú*/
+}
+header a:hover{  /*hover es la interacción del mouse con la página.. en este caso con la parte del menú*/
+  color: var(--gristono1);
+}
+nav details summary{
+  font-weight: bold; /*titulos del menú un poco más oscuros*/
+}
+h1{
+  font-size:60px; /*tamaño de fuente font-size*/
+}
+h2{
+  font-size: 2em;
+}
+h3{
+  font-size:1.5em;
+}
