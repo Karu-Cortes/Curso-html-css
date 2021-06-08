@@ -35,3 +35,11 @@ h2{
 h3{
   font-size:1.5em;
 }
+pre{
+  background: #cdcdcd; /*colocar color de fondo*/
+ ;
+}
+.panel { /*agregar el panel decorativo */
+  background: linear-gradient(274.51deg, rgba(255, 102, 249, 0.5) 5%, rgba(102, 255, 255, 0.6) 130.61%), url("../imagenes/patron-2.png");
+  height: 350px;
+}
