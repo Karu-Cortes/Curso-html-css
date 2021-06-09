@@ -13,191 +13,291 @@
 </head>
   <body>
     <div class="panel"></div>
-    <header>
-      <!--estructura de un menú-->
-      <nav> <!--sección de-->
-        <h3>CONTENIDO</h3>
-        <details open><!--details y summary son un complemento para poder comprimir y expandir un-->
-          <summary>
-            Setup
-          </summary>
-          <ol><!--Listas ordenadas-->
-            <li>
-              <a href="#google-chrome">Google Chrome</a>
-            </li><!-- elementos de la lista-->
-            <li>
-              <a href="#vsc">Visual Studio Code</a>
-            </li>
-            <li>
-              <a href="#figma">Figma</a>
-            </li>
-            <li>
-              <a href="#github">GitHub</a>
-            </li>
-          </ol>
-        </details>
-        <details open>
-          <summary>
-            Conceptos esenciales del Desarrollo Web
-          </summary>
-          <ol>
-            <li>
-              <a href="#html">Qué es HTML</a>
-            </li>
-            <li>
-              <a href="#etiquetas">Etiquetas</a>
-            </li>
-            <li>
-              <a href="#dom">DOM</a>
-            </li>
-            <li>
-              <a href="#semantica">Semántica</a>
-            </li>
-            <li>
-              <a href="#atributos">Atributos</a>
-            </li>
-            <li>
-              <a href="#css">Qué es CSS</a>
-            </li>
-          </ol>
-        </details>
-        <details open>
-          <summary>
-            Para tener en cuenta y no olvidar
-          </summary>
-          <ol>
-            <li>
-              <a href="#tipos-a">Tipos de Rutas de Archivos que existen en HTML 5</a>
-            </li>
-            <li>
-              <a href="#entidades">Entidades HTML</a>
-            </li>
-            <li>
-              <a href="#pseudo">Pseudo-Clases CSS</a>
-            </li>
-            <li>
-              <a href="#propiedadescss">Propiedades Personalizadas CSS</a>
-            </li>
-          </ol>
-        </details>
-      </nav>
-    </header>
-    <h1>Curso esencial de HTML y CSS</h1>
-    <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos,
-      en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-    <h2>Setup</h2>
-    <img src="./imagenes/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome" id="google-chrome"> <!--title es para cuando el usuario pase el cursor por la imagen, muestre el titulo que se le asigno a esta-->
-    <h3>Google Chrome</h3>
-    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas
-      de desarrollo avanzadas y de amigable uso.</p>
-    <img src="./imagenes/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code" id="vsc"> <!--alt es para la accesibilidad cuando la imagen no ha cargado -->
-    <h3>Visual Studio Code</h3>
-    <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de
-      extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en
-      el que se desemvuelva.</p>
-    <img src="./imagenes/figma.png" alt="Logo de Figma" title="Logo de Figma" id="figma">
-    <h3>Figma</h3>
-    <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
-      implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
-    <img src="./imagenes/github.png" alt="Logo de GitHub"  title="Logo de GitHub" id="github">
-    <h3>GitHub</h3>
-    <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el
-      mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
-      manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
-    <hr><!--representa un cambio de tema entre párrafos, se muestra una línea que divide los temas-->
-    <h2>Conceptos esenciales del Desarrollo Web</h2>
-    <h3 id="html">Qué es HTML</h3>
-    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
-      y la estructura del contenido. <code>html lang="en"</code></p> <!--para colocar códgio visible en la página, usamos code y este debe estar dentro de la etiqueta p-->
-      <pre> <!--se puede colocar código visible en la página en forma de bloque-->
-        <!--para realizar el escape de código a texto de forma ágil, copiar el texto ejemplo en la página: https://www.freeformatter.com/html-escape.html-->
-          &lt;!DOCTYPE html&gt;
-          &lt;html lang=&quot;es&quot;&gt;
-          &lt;head&gt;
-          &lt;meta charset=&quot;UTF-8&quot;&gt;
-          &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-          &lt;title&gt;Curso HTML y CSS&lt;/title&gt;
-      </pre>
-    <h3 id="etiquetas">Etiquetas</h3>
-    <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
-      características y usos diferentes aunque visualmente den un resultado similar.</p>
-    <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
-      section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una
-      pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
-      Software Developer.</p>
-    <h3 id="dom">DOM</h3>
-    <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
-      genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
-      dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
-    <img src="./imagenes/dom.png" alt="Estructura de árbol DOM" title="Estructura de árbol DOM">
-    <h3 id="semantica">Semántica</h3>
-    <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y
-    no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
-    relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido,
-    categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
-    la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-    <h3 id="atributos">Atributos</h3>
-    <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
-    navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
-    funcionan en solo alguna etiquetas como src</p>
-    <h3 id="css">Qué es CSS</h3>
-    <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
-    la presentación de documentos HTML</p>
-    <img src="./imagenes/image 5.png" alt="Logo CSS5" title="Logo CSS5"> <!--el  " /image ".... busca desde el directorio raíz ruta relativa-->
-    <hr>
-    <h2>Modelo de caja</h2>
-    <h3>El modelo de caja está compuesto por:</h3>
-    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de
-    desarrollo avanzadas y de amigable uso.</p>
-    <ol><!--Listas  ordenadas-->
-      <li>Tamaño del del contenido / ancho y alto</li>
-      <li>Padding / Relleno</li>
-      <li>Border / Bordes</li>
-      <li>Margin / Márgenes</li>
-    </ol>
-    <h3>Propiedades físicas para el modelo de caja:</h3>
-    <ul><!--Listas no ordenadas-->
-      <li>width / height</li>
-      <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-      <li>border / border-top | border-right | border-bottom | border-left</li>
-      <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-    </ul>
-    <h3>Propiedades lógicas para el modelo de caja:</h3>
-    <ul><!--Listas no ordenadas-->
-      <li>inline-size / block-size</li>
-      <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-      <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-      <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-    </ul>
-    <hr>
-    <h2>Para tener en cuenta y no olvidar</h2>
-    <h3 id="tipos-a">Tipos de Rutas de Archivos que existen en HTML 5</h3>
-    <img src="./imagenes/tipos-de-rutas.PNG" alt="Tipos de rutas de archivos"  title="Tipos de rutas de archivos">
-    <a href="https://blog.nubecolectiva.com/los-tipos-de-rutas-de-archivos-que-existen-en-html-5/" target="_blank">Más información sobre el tema Tipos de Rutas de Archivos que existen en HTML 5</a><!--El atributo target, nos ayuda a generar una nueva pestaña la cual direccionará la URL agregada  -->
-      <h3 id="entidades">Entidades HTML / Caracteres reservados para código en texto</h3>
-      <p>Para agregar un código HTML como ejemplo en la página, se usa estas entidades de forma tal que HTML no lo reconozca como código, sino como texto. Por Ejemplo: <a href="#html">Qué es HTML</a></p>
-      <img src="./imagenes/entidades.PNG" alt="Entidades HTML" title="Entidades HTML">
-      <a href="https://developer.mozilla.org/es/docs/Glossary/Entity" target="_blank">Más información sobre el tema Entidades</a>
-      <h3 id="pseudo">Pseudo-clases en Css</h3>
-      <p>Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento
-      seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el
-      selector.</p>
-      <img src="imagenes/pseudoclase.PNG" alt="Lista de Pseudo-clases"  title="Lista de Pseudo-clases">
-      <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Más información sobre el tema Pseudo-Clases</a>
-      <h3 id="propiedadescss">Propiedades personalizadas - CSS</h3>
-      <p>Los nombres de las propiedades que tiene el prefijo --, como --ejemplo-nombre, representan las propiedades
-      personalizadas que contienen un valor que puede ser usado en otras declaraciones usando la función va. Como por ejemplo:</p>
-        <pre>
-          --somekeyword: left;
-          --somecolor: #0000ff;
-          --somecomplexvalue: 3px 6px rgb(20, 32, 54);
-        </pre>
-        <a href="https://developer.mozilla.org/es/docs/Web/CSS/--*" target="_blank">Más información sobre el tema Propiedades Personalizadas CSS</a>
-      <p>
-      Correo de Contacto:
-      <a href="mailto:karenj.cortes@outlook.com">mailto:karenj.cortes@outlook.com</a> <!-- El atribito mailto va a abrir la herramienta más cercana para poder escribir un correo a esa dirección  -->
-    </p>
-   <button<i class="fas fa-envelope-open-text"></i></button>
+    <div class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <header>
+            <!--estructura de un menú-->
+            <nav>
+              <!--sección de-->
+              <h3>CONTENIDO</h3>
+              <details open>
+                <!--details y summary son un complemento para poder comprimir y expandir un-->
+                <summary>
+                  Setup
+                </summary>
+                <ol>
+                  <!--Listas ordenadas-->
+                  <li>
+                    <a href="#google-chrome">Google Chrome</a>
+                  </li><!-- elementos de la lista-->
+                  <li>
+                    <a href="#vsc">Visual Studio Code</a>
+                  </li>
+                  <li>
+                    <a href="#figma">Figma</a>
+                  </li>
+                  <li>
+                    <a href="#github">GitHub</a>
+                  </li>
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Conceptos esenciales del Desarrollo Web
+                </summary>
+                <ol>
+                  <li>
+                    <a href="#html">Qué es HTML</a>
+                  </li>
+                  <li>
+                    <a href="#etiquetas">Etiquetas</a>
+                  </li>
+                  <li>
+                    <a href="#dom">DOM</a>
+                  </li>
+                  <li>
+                    <a href="#semantica">Semántica</a>
+                  </li>
+                  <li>
+                    <a href="#atributos">Atributos</a>
+                  </li>
+                  <li>
+                    <a href="#css">Qué es CSS</a>
+                  </li>
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Para tener en cuenta y no olvidar
+                </summary>
+                <ol>
+                  <li>
+                    <a href="#tipos-a">Tipos de Rutas de Archivos que existen en HTML 5</a>
+                  </li>
+                  <li>
+                    <a href="#entidades">Entidades HTML</a>
+                  </li>
+                  <li>
+                    <a href="#pseudo">Pseudo-Clases CSS</a>
+                  </li>
+                  <li>
+                    <a href="#propiedadescss">Propiedades Personalizadas CSS</a>
+                  </li>
+                  <li>
+                    <a href="#pseudoele">Pseudoelementos en CSS</a>
+                  </li>
+                  <li>
+                    <a href="#modeloc">Modelo de Cajas en CSS</a>
+                  </li>
+                </ol>
+              </details>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
+    <main class="main"> <!--contenedor del texto completo-->
+      <div class="wrapper"> <!--envolver y centrar el contenido-->
+        <div class="main-content"> <!--fluidez del contenido-->
+          <h1>Curso esencial de HTML y CSS</h1>
+          <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
+            contenidos,
+            en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+          <hr>
+          <section class="seccion-contenidos"><!--contenedor de secciones-->
+            <h2>Setup</h2>
+            <img src="./imagenes/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"><!--title es para cuando el usuario pase el cursor por la imagen, muestre el titulo que se le asigno a esta-->
+            <h3 id="google-chrome">Google Chrome</h3>
+            <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
+              herramientas
+              de desarrollo avanzadas y de amigable uso.</p>
+            <img src="./imagenes/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+            <!--alt es para la accesibilidad cuando la imagen no ha cargado -->
+            <h3 id="vsc">Visual Studio Code</h3>
+            <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad
+              de
+              extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje
+              en
+              el que se desemvuelva.</p>
+            <img src="./imagenes/figma.png" alt="Logo de Figma" title="Logo de Figma" >
+            <h3 id="figma">Figma</h3>
+            <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
+              implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
+            <img src="./imagenes/github.png" alt="Logo de GitHub" title="Logo de GitHub" >
+            <h3 id="github">GitHub</h3>
+            <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo
+              el
+              mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
+              manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
+            <blockquote>
+              <!--realizar un bloque de línea-->
+              <p>"Tus talentos y habilidades irán mejorando con el tiempo, pero para eso has de empezar"</p>
+              <p>
+                <span>
+                  -Martin Luther King
+                </span>
+              </p>
+            </blockquote>
+          </section>
+          <section class="seccion-contenidos">
+            <hr><!--representa un cambio de tema entre párrafos, se muestra una línea que divide los temas-->
+            <h2>Conceptos esenciales del Desarrollo Web</h2>
+            <h3 id="html">Qué es HTML</h3>
+            <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
+              significado
+              y la estructura del contenido. <code>html lang="en"</code></p>
+            <!--para colocar códgio visible en la página, usamos code y este debe estar dentro de la etiqueta p-->
+            <pre> <!--se puede colocar código visible en la página en forma de bloque-->
+                          <!--para realizar el escape de código a texto de forma ágil, copiar el texto ejemplo en la página: https://www.freeformatter.com/html-escape.html-->
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;es&quot;&gt;
+                            &lt;head&gt;
+                            &lt;meta charset=&quot;UTF-8&quot;&gt;
+                            &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                            &lt;title&gt;Curso HTML y CSS&lt;/title&gt;
+                        </pre>
+            <h3 id="etiquetas">Etiquetas</h3>
+            <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una
+              tiene
+              características y usos diferentes aunque visualmente den un resultado similar.</p>
+            <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
+              section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos
+              una
+              pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
+              Software Developer.</p>
+            <h3 id="dom">DOM</h3>
+            <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
+              genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos
+              identificar
+              dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
+            <img src="./imagenes/dom.png" alt="Estructura de árbol DOM" title="Estructura de árbol DOM">
+            <h3 id="semantica">Semántica</h3>
+            <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente
+              decorativos y
+              no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán
+              más
+              relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido,
+              categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También
+              ayudará a
+              la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
+            <h3 id="atributos">Atributos</h3>
+            <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por
+              el
+              navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
+              funcionan en solo alguna etiquetas como src</p>
+            <h3 id="css">Qué es CSS</h3>
+            <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para
+              describir
+              la presentación de documentos HTML</p>
+            <img src="./imagenes/image 5.png" alt="Logo CSS5" title="Logo CSS5">
+            <!--el  " /image ".... busca desde el directorio raíz ruta relativa-->
+          </section>
+          <section class="seccion-contenidos">
+            <h2>Modelo de caja</h2>
+            <h3>El modelo de caja está compuesto por:</h3>
+            <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
+              herramientas de
+              desarrollo avanzadas y de amigable uso.</p>
+            <ol>
+              <!--Listas  ordenadas-->
+              <li>Tamaño del del contenido / ancho y alto</li>
+              <li>Padding / Relleno</li>
+              <li>Border / Bordes</li>
+              <li>Margin / Márgenes</li>
+            </ol>
+            <h3>Propiedades físicas para el modelo de caja:</h3>
+            <ul>
+              <!--Listas no ordenadas-->
+              <li>width / height</li>
+              <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+              <li>border / border-top | border-right | border-bottom | border-left</li>
+              <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+            </ul>
+            <h3>Propiedades lógicas para el modelo de caja:</h3>
+            <ul>
+              <!--Listas no ordenadas-->
+              <li>inline-size / block-size</li>
+              <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end
+              </li>
+              <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end
+              </li>
+              <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
+                padding-inline-end</li>
+            </ul>
+          </section>
+          <section class="seccion-contenidos">
+            <hr>
+            <h2>Para tener en cuenta y no olvidar</h2>
+            <h3 id="tipos-a">Tipos de Rutas de Archivos que existen en HTML 5</h3>
+            <img src="./imagenes/tipos-de-rutas.PNG" alt="Tipos de rutas de archivos" title="Tipos de rutas de archivos">
+            <p><a href="https://blog.nubecolectiva.com/los-tipos-de-rutas-de-archivos-que-existen-en-html-5/" target="_blank">Más
+                información sobre el tema Tipos de Rutas de Archivos que existen en HTML 5</a></p>
+            <!--El atributo target, nos ayuda a generar una nueva pestaña la cual direccionará la URL agregada  -->
+            <br>
+            <h3 id="entidades">Entidades HTML / Caracteres reservados para código en texto</h3>
+            <p>Para agregar un código HTML como ejemplo en la página, se usa estas entidades de forma tal que HTML no lo reconozca
+              como código, sino como texto. Por Ejemplo: <a href="#html">Qué es HTML</a></p>
+            <img src="./imagenes/entidades.PNG" alt="Entidades HTML" title="Entidades HTML">
+            <p>En está página se puede realizar la acción de forma más rápida. <a
+                href="https://www.freeformatter.com/html-escape.html" target=_blank">freeformatter.com</a> <br>
+              <a href="https://developer.mozilla.org/es/docs/Glossary/Entity" target="_blank">Más información sobre el tema
+                Entidades</a>
+            </p>
+            <br>
+            <h3 id="pseudo">Pseudo-clases en Css</h3>
+            <p>Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del
+              elemento
+              seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por
+              el
+              selector.</p>
+            <img src="imagenes/pseudoclase.PNG" alt="Lista de Pseudo-clases" title="Lista de Pseudo-clases">
+            <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Más información sobre el
+                tema Pseudo-Clases</a></p>
+            <br>
+            <h3 id="propiedadescss">Propiedades personalizadas - CSS</h3>
+            <p>Los nombres de las propiedades que tiene el prefijo --, como --ejemplo-nombre, representan las propiedades
+              personalizadas que contienen un valor que puede ser usado en otras declaraciones usando la función va. Como por
+              ejemplo:</p>
+            <pre>
+                            --somekeyword: left;
+                            --somecolor: #0000ff;
+                            --somecomplexvalue: 3px 6px rgb(20, 32, 54);
+                          </pre>
+            <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/--*" target="_blank">Más información sobre el tema
+                Propiedades Personalizadas CSS</a></p>
+            <br>
+            <h3 id="pseudoele">Pseudoelementos en CSS</h3>
+            <p>Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un
+              estado
+              especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento
+              <code> " ::first-line "</code> selecciona solo la primera línea del elemento especificado por el selector.
+            </p>
+            <img src="./imagenes/pseudielementos.PNG" alt="Lista de Pseudoelementos" title="Lista de Pseudoelementos">
+            <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="_blank">Más información sobre el
+                tema Pseudoelementos</a></p>
+            <br>
+            <h3 id="modeloc">Modelo de Caja CSS</h3>
+            <p>Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS o para
+              alinear
+              elementos con otros elementos. En este artículo, echaremos un vistazo más de cerca al modelo de cajas en CSS con el
+              que
+              vas a poder crear diseños de compaginación más complejos con una comprensión de cómo funciona y la terminología
+              relacionada.</p>
+            <h4>Video Explicación Sobre Modelo de Cajas en CSS</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NksNepCWh3k" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </section>
+          <p>
+            Correo de Contacto:
+            <a href="mailto:karenj.cortes@outlook.com">mailto:karenj.cortes@outlook.com</a>
+            <!-- El atribito mailto va a abrir la herramienta más cercana para poder escribir un correo a esa dirección  -->
+          </p>
+          <button<i class="fas fa-envelope-open-text"></i></button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

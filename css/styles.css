@@ -5,41 +5,189 @@
   --gristono2:#424242;
   --gristono3:#616161;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   color: var(--gristono1);
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
 }
+
 a{
   color: var(--gristono1);
 }
+
 header{
-  color: var(--gristono3);
-  font-size:14px;
+  font-size: 14px;
+  width: 188px;
+  color: var(--gray10);
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  z-index: 1;
 }
+
 header a{
   color: var(--gristono3);
   text-decoration: none; /*quitar el subrayado a las opciones del menú*/
 }
+
 header a:hover{  /*hover es la interacción del mouse con la página.. en este caso con la parte del menú*/
   color: var(--gristono1);
 }
+
 nav details summary{
   font-weight: bold; /*titulos del menú un poco más oscuros*/
+  line-height: ;
 }
+
+header li {
+  margin-bottom: 16px;
+}
+
 h1{
   font-size:60px; /*tamaño de fuente font-size*/
+  /*top: espacio del borde superior*/
+  /*right: espacio a la derecha*/
+  /*bottom:espacio del borde inferior*/
+  /*left: espacio a la izquierda*/
+  /*margin: top right bottom left*/
+  margin-top: 64px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+hr{
+  margin: 64px 0;
+  /*color: var(--gristono3);*/
 }
 h2{
   font-size: 2em;
+  margin: 64px 0 40px;
+  font-weight: normal;
 }
+
 h3{
   font-size:1.5em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
+
 pre{
   background: #cdcdcd; /*colocar color de fondo*/
- ;
+  padding: 40px;
+  font-family: roboto;
+  line-height: 24px;
+  color: black;
 }
+
+code{
+  color: black;  /*colocar col or de fondo*/
+
+  background: rgba(207, 77, 223, 0.2);
+}
+
+blockquote{
+  color: black;
+  font-size:24px;
+  margin: 32px 0 ;
+  padding-left: 16px; /*padding realizado a la izquierda*/
+  line-height: 24px;
+  border-left: 4px solid var(--gristono1);
+}
+
+blockquote span{
+  color: var(--gristono3);
+}
+
+blockquote span::before {
+  content: '-';
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+.main{
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
+}
+
+.wrapper{
+  width: 902px; /*ancho*/
+  margin: auto; /*centra el border - main*/
+}
+
+.main-content{
+  background: white;
+}
+
 .panel { /*agregar el panel decorativo */
-  background: linear-gradient(274.51deg, rgba(255, 102, 249, 0.5) 5%, rgba(102, 255, 255, 0.6) 130.61%), url("../imagenes/patron-2.png");
-  height: 350px;
+  background: linear-gradient(274.51deg, rgba(255, 102, 249, 0.5) 5%, rgba(102, 255, 255, 0.6) 70.61%), url("../imagenes/patron-2.png");
+  height: 200px;
 }
+
+.seccion-contenidos {
+  counter-reset: listadetit; /*resetear cada lista de titulo */
+  margin-top: 168px;
+  position: relative;
+}
+
+.seccion-contenidos:first-of-type{
+  margin: 0; /*como arriba se le asigno 168px, lo que hace es que al primer elemento "setup" le quita esa margen.*/
+}
+
+.seccion-contenidos ol li{
+  line-height: 24px; /*espacio alto de linea */
+}
+
+.seccion-contenidos ul li{
+  margin-bottom: 16px; /*espacio entre las listas de ul-li */
+}
+
+
+.seccion-contenidos + hr{
+  display: none; /*desaparece la separación de contenidos*/
+}
+
+.seccion-contenidos img{
+  margin-top: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.seccion-contenidos h3{
+  counter-increment: listadetit ; /*incremento de titulos del menú en CSS, counter nos enumerará los h3*/
+/*Para dividir la numeración por secciones, se debe realizar un main (contenedor del contenido antes del titulo y abarcar todo el texto y dividir con section las secciones o los subtitulos */
+padding-bottom: 4px;
+}
+
+.seccion-contenidos h3::before{ /*crea un contenido en el primer hilo del elemento seleccionado, en este caso h3*/
+content: counter(listadetit,decimal)". "; /*variable de incremento de titulos*/
+}
+
+.seccion-contenidos h3::after{ /*crea contenido en el último hilo del elemento seleccionado, en este caso h3*/
+content: "";
+width: 32px;
+height: 4px;
+background:var(--gristono2);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+::selection { /*Así es cómo se usan los Pseudo Elementos en Css*/
+  background: #cdcdcd; /*lo que hace esta función es que al momento de seleccionar un parrafo, este se colocará de color Gris claro*/
+}
+
