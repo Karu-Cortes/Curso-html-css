@@ -133,7 +133,7 @@ blockquote span::before {
 }
 
 .panel { /*agregar el panel decorativo */
-  background: linear-gradient(274.51deg, rgba(255, 102, 249, 0.5) 5%, rgba(102, 255, 255, 0.6) 70.61%), url("../imagenes/patron-2.png");
+  background: linear-gradient(255deg,#ffe583,#ff63cc);
   height: 200px;
 }
 
